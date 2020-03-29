@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <h4>ユーザー一覧</h4>
+  <v-container>
+    <h2>全てのユーザー</h2>
     <v-row class="mb-6" no-gutters>
       <v-col v-for="n in users.length" :key="n">
         <user-item :user="users[n-1]" :num="n-1" />
       </v-col>
     </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>

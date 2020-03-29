@@ -1,12 +1,15 @@
 <template>
-  <router-link :to="'/user/'+user.name.first">
-    <!-- <router-link :to="{ path:'/user/'+user.name.first, params: user}"> -->
-    <v-card class="item" width="150px">
+  <!-- <router-link :to="{ path:'/user/'+user.name.first, params: user}"> -->
+  <v-card class="item" width="170px">
+    <router-link :to="'/user/'+user.name.first">
       <v-img :src="user.picture.medium"></v-img>
       <v-card-text>{{user.name.first}} {{user.name.last}}</v-card-text>
       <!-- {{num}} -->
-    </v-card>
-  </router-link>
+    </router-link>
+    <v-btn icon>
+      <v-icon>mdi-heart</v-icon>
+    </v-btn>
+  </v-card>
 </template>
 
 <script>

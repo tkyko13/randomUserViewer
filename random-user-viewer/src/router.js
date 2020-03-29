@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
-import AllUser from "./components/AllUser.vue";
-import Counter from "./components/Counter.vue";
+import AllUser from "./components/AllUser";
 import UserViewer from "./components/UserViewer";
+import About from "./components/About";
 
 Vue.use(Router);
 
@@ -15,14 +15,14 @@ export default new Router({
       component: AllUser
     },
     {
-      path: "/counter",
-      name: "Counter",
-      component: Counter
-    },
-    {
       path: "/user/:name",
       name: "UserViewer",
       component: UserViewer
+    },
+    {
+      path: "/about",
+      name: "About",
+      component: About
     }
   ]
 });

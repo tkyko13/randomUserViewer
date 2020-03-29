@@ -1,6 +1,6 @@
 <template>
   <div id="history">
-    <h4>最近見たユーザー</h4>
+    <h2>最近見たユーザー</h2>
     <v-row class="mb-6" no-gutters>
       <v-col v-for="n in historyUser.length" :key="n">
         <user-item :user="historyUser[n-1]" :num="n-1" />
